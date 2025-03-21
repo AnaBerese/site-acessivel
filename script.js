@@ -1,22 +1,16 @@
-document.addEventListener('DOMContentLoaded',function(){
- const aumentafontebotao. =document.getelementid.("aumentar-fonte");
- const diminuirfontebotao. =document.getelementid.("diminuir-fonte");
+document.addEventListener('DOMContentLoaded', function(){
+    const aumentaFonteBotao = document.getElementById('aumentar-fonte');
+    const diminuiFonteBotao = document.getElementById('diminuir-fonte');
 
- let tamanhoatualfonte = 1;
- aumentafontebotao.addEventListener('click', function){
- tamanhoatualfonte +=0.1;
- document.body.style.fontesize = $ '[{tamanhoatualfonte}]rem';
+    let tamanhoAtualFonte = 1;
+    aumentaFonteBotao.addEventListener('click', function(){
+        tamanhoAtualFonte += 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
+    });
+    diminuiFonteBotao.addEventListener('click', function(){
+        tamanhoAtualFonte -= 0.1;
+        document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
 
- };
+    });
 
-}
-);
-
- let tamanhoatualfonte = 1;
- diminuirfontebotao.addEventListener('click', function){
- tamanhoatualfonte -=0.1;
- document.body.style.fontesize = $ '[{tamanhoatualfonte}]rem';
-
- };
-
-
+});
