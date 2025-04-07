@@ -14,4 +14,8 @@ const alternaContraste = document.getElementById('alterna-contraste');
 
     });
 
+    alternaContraste.addEventListener('click', funcion(){
+        document.body.classList.toggle('alto-contraste')
+
+    })
 });
